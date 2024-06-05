@@ -15,7 +15,7 @@ import tensorflow as tf
 # model.fit(x_train,y_train,epochs=3)
 # model.save('handwritten.keras')
 model=tf.keras.models.load_model('handwritten.keras')
-img=cv2.imread('two_digit3.png')[:,:,0]
+img=cv2.imread('digit3.png')[:,:,0]
 img1=img[:,0:28]
 img2=img[:,28:56]
 #print(img.shape,'\n',img1.shape,'\n',img2.shape)
